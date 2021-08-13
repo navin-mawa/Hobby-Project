@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="container">
+        <h2> Hobby Web Application - Car List!!</h2>
+        
+        <br>
+        <br>
+        <img src="https://assets.whichcar.com.au/image/upload/s--PZ_7b2sJ--/ar_2.304921968787515,c_fill,f_auto,q_auto:good/c_scale,w_2048/v1/archive/whichcar/2019/06/28/19567/1971-Lamborghini-Miura-SV-feature.jpg"
+
+
+    <div class="container" id="createForm">
+
+        <h3> Create and Update car</h3>
+
+        <form>
+            <div class="mb-3">
+              <label for="nameInput" class="form-label">Name</label>
+              <input type="text" class="form-control" id="nameInput" aria-describedby="name input">
+              <div id="nameHelp" class="form-text">Please enter the name of the car you want</div>
+            </div>  
+            
+            <div class="mb-3">
+                <label for="colourInput" class="form-label">Colour</label>
+                <input type="text" class="form-control" id="colourInput" aria-describedby="colour input">
+                <div id="colourHelp" class="form-text">Please enter the colour of this car you want</div>
+              </div> 
+
+              <div class="mb-3">
+                <label for="sizeInput" class="form-label">Size</label>
+                <input type="number" class="form-control" id="sizeInput" aria-describedby="size input">
+                <div id="sizeHelp" class="form-number">Please enter the size of the car you want</div>
+              </div> 
+
+              <div class="mb-3">
+                <label for="modelInput" class="form-label">Model</label>
+                <input type="number" class="form-control" id="modelInput" aria-describedby="model input">
+                <div id="sizeHelp" class="form-number">Please enter the model of the car you want</div>
+              </div> 
+
+              <div class="mb-3">
+                <label for="idInput" class="form-label">ID(to update)</label>
+                <input type="number" class="form-control" id="idInput" aria-describedby="id input">
+                <div id="idHelp" class="form-number">If updating a car, please enter the ID here</div>
+              </div> 
+
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" id="model">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Model of the Car</label>
+              </div>
+
+              <button type="button" class="btn btn-success btn-lg"> Create New Car </button>
+              <button type="button" class="btn btn-secondary btn-lg"> Update Car </button>
+              <button type="button" class="btn btn-danger btn-lg"> Clear Data </button>
+          </form>
+
+
+    </div>
+    
+    <br>
+    <br>
+
+    <img src=""
+
+    <div class="container" id="deleteForm">
+
+        <h3> Delete car </h3>
+        
+        <form>
+               <div class="mb-3">
+               <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" id="model">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Enter the ID of the car you want to delete</label>
+              </div>
+
+              <button type="button" class="btn btn-danger btn-lg"> Delete Car </button>
+              </form>
+              
+
+            </div>
+
+                <div class="container" id="dataContainer">
+
+                    <h3> All data in database </h3>
+
+                    <div class="container" id="cardList">
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"> Name </h5>
+                              <h5 class="card-text"> Colour </h5>
+                              <h5 class="card-text"> Size </h5>
+                              <h5 class="card-text"> Model </h5>
+                              <h5 class="card-text"> ID </h5>
+                            </div>
+                          </div>
+
+
+                    </div>
+
+                
+ 
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <script src="fetch.js"></script>
+ 
+
+</div>
+</body>
+</html>
