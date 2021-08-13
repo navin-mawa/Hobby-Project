@@ -76,13 +76,15 @@
         <h3> Delete car </h3>
         
         <form>
-               <div class="mb-3">
-               <div class="form-check form-switch mb-3">
-                <input class="form-check-input" type="checkbox" id="model">
-                <label class="form-check-label" for="flexSwitchCheckDefault">Enter the ID of the car you want to delete</label>
-              </div>
+          <div class="mb-3"> 
+            <label for="idInput" class="form-label">ID</label>
+            <input type="text" class="form-control" id="deleteInput" aria-describedby="id input">
+            <div id="idHelp" class="form-text">Enter the ID of the item you want to delete</div>
+        </div>
 
-              <button type="button" class="btn btn-danger btn-lg"> Delete Car </button>
+        <button type="button" class="btn btn-danger btn-lg" id="deleteBtn"> Delete Car </button>
+
+
               </form>
               
 

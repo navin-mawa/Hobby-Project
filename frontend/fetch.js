@@ -110,10 +110,6 @@ let printOutForm = () => {
 
 }
 
-
-
-
-
 let postData = () => {
 
     const car = {
@@ -137,11 +133,54 @@ let postData = () => {
         .then((data) => {
 
 
-            console.log(`Post request sucessfull`);
+            console.log(`Post request succesful`);
 
         });
 
-    };     
+    };    
+    const deleteID = document.querySelector('#deleteInput');
+    const deleteButton = document.querySelector('#deleteBtn');
+
+    let deleteData = (id) => {
+
+    fetch(`http://localhost:8082/delete/${id}`, {
+        method: `DELETE`, // Using DELETE Method
+    }).then((data) => {
+        console.log(`Delete request succesful`);
+    });
+
+}
+
+let updateData = (id) => {
+
+    const item = {
+        "name": nameInput.value,
+        "quantity": parseInt(quantityInput.value, 10),
+        "high_priority": true
+    };
+
+    fetch(`http://localhost:8082/update/${id}`, {
+        method: `PUT`, 
+        headers: {
+            "Content-type":"application/json" 
+        },              
+        body: JSON.stringify(item) 
+    }).then((response) =>{
+        response.json();
+    })
+    .then((data) => {
+        console.log(`Post request succesful`);
+    });
+
+};
+
+     updateButton.addEventListener('click', function() {
+     updateData(idInput.value);
+})
+
+     deleteButton.addEventListener('click', function(){
+     deleteData(deleteID.value);
+});
 
 
 submitButton.addEventListener('click', postData);
