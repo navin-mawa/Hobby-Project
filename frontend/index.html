@@ -58,9 +58,9 @@
                 <label class="form-check-label" for="flexSwitchCheckDefault">Model of the Car</label>
               </div>
 
-              <button type="button" class="btn btn-success btn-lg"> Create New Car </button>
-              <button type="button" class="btn btn-secondary btn-lg"> Update Car </button>
-              <button type="button" class="btn btn-danger btn-lg"> Clear Data </button>
+              <button type="button" class="btn btn-success btn-lg" id ="submitBtn" >Submit</button>
+              <button type="button" class="btn btn-secondary btn-lg" id ="updateBtn" >Update</button>
+              <button type="button" class="btn btn-danger btn-lg" id = "clearBtn" >Clear</button>
           </form>
 
 
@@ -88,31 +88,27 @@
 
             </div>
 
-                <div class="container" id="dataContainer">
+            <div class="container" id="dataContainer">
 
-                    <h3> All data in database </h3>
+                <h3> All data in database </h3>
 
-                    <div class="container" id="cardList">
+                <div class="container" id="cardList">
 
-                        <div class="card">
-                            <div class="card-body">
-                              <h5 class="card-title"> Name </h5>
-                              <h5 class="card-text"> Colour </h5>
-                              <h5 class="card-text"> Size </h5>
-                              <h5 class="card-text"> Model </h5>
-                              <h5 class="card-text"> ID </h5>
-                            </div>
-                          </div>
-
-
-                    </div>
-
-                
- 
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title"> Name </h5>
+                          <h5 class="card-text"> Colour </h5>
+                          <h5 class="card-text"> Size </h5>
+                          <h5 class="card-text"> Model </h5>
+                          <h5 class="card-text"> ID </h5>
+                        </div>
+                      </div>
 
 
+                </div>
 
 
+                    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="index.js"></script>
     <script src="fetch.js"></script>
